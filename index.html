@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-  box-sizing: border-box;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OUR MENU</title>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+#container{
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: auto;
+  background-color: burlywood;
+  margin-bottom: 10px;
 }
-header {
-  margin-bottom: 15px;
+#head{
+  width: 35%;
+  position: relative;
+  bottom: 9%;
+  left: 68%;
+  background-color: cadetblue;
+  border: 2px solid black;
   text-align: center;
 }
 
-p {
-  border: 2px solid black;
-  background-color: gray;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: rgb(54, 51, 51);
-}
-
-/* Simple Responsive Framework. */
-.row {
+.row{
   width: 100%;
 }
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-   
+    
   }
   .col-lg-1 {
     width: 8.33%;
@@ -74,11 +80,10 @@ p {
   }
 }
 
-/********** Medium devices only **********/
-@media (min-width: 768x) and (max-width: 991px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid black;
   }
   .col-md-1 {
     width: 8.33%;
@@ -117,18 +122,24 @@ p {
     width: 100%;
   }
 }
-    </style>
+</style>
 </head>
 <body>
-    <header> <h1>Menu</h1></header>
-    <div class="row">
-        <div class="col-lg-4 col-md-6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eligendi numquam praesentium voluptates quas commodi facere at alias ipsum molestias id et, quod itaque! Cumque ex vel recusandae cupiditate corporis, neque a quasi quia facere cum incidunt pariatur nostrum minima aperiam asperiores mollitia necessitatibus. Tempore numquam velit vel inventore!</p></div>
-        <div class="col-lg-4 col-md-6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eligendi numquam praesentium voluptates quas commodi facere at alias ipsum molestias id et, quod itaque! Cumque ex vel recusandae cupiditate corporis, neque a quasi quia facere cum incidunt pariatur nostrum minima aperiam asperiores mollitia necessitatibus. Tempore numquam velit vel inventore!</p></div>
-        <div class="col-lg-4 col-md-6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eligendi numquam praesentium voluptates quas commodi facere at alias ipsum molestias id et, quod itaque! Cumque ex vel recusandae cupiditate corporis, neque a quasi quia facere cum incidunt pariatur nostrum minima aperiam asperiores mollitia necessitatibus. Tempore numquam velit vel inventore!</p></div>
-        
-      </div>
-    
- 
+<h1>OUR MENU</h1>
+<div class="row">
+  <div class="col-lg-4 col-md-6">
+    <div id="container">
+    <p> <h3 id="head">CHICKEN</h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, iusto ut nulla eum tempora veritatis reiciendis sed facere praesentium quidem totam placeat sequi at aliquam temporibus dolore quibusdam explicabo earum?</p></div>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <div id="container">
+    <p><h3 id="head">BEEF</h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, iusto ut nulla eum tempora veritatis reiciendis sed facere praesentium quidem totam placeat sequi at aliquam temporibus dolore quibusdam explicabo earum?</p></div>
+  </div>
+  <div class="col-lg-4 col-md-12">
+    <div id="container">
+    <p><h3 id="head">SHUSHI</h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, iusto ut nulla eum tempora veritatis reiciendis sed facere praesentium quidem totam placeat sequi at aliquam temporibus dolore quibusdam explicabo earum?</p></div>
+  </div>
+
 
 </body>
 </html>
